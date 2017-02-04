@@ -11,5 +11,9 @@ imiona.forEach(function (element, i) {
 	console.log("Element" + i + ": " + element)
 });
 console.log(imiona.join(" - "));
-console.log(imiona.sort());
-console.log(imiona.reverse());
+//console.log(imiona.sort());
+//console.log(imiona.reverse());
+console.log(imiona.indexOf("Adam"));
+console.log(Array.isArray(imiona));
+console.log(imiona.slice(2, 3));
+console.log(imiona.toString());
