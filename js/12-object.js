@@ -1,30 +1,26 @@
 'use strict';
-/*var Krzysiek = {
-	imie: "Krzysiek"
-	, wzrost: 180
-	, przedstawosobe: function () {
-		console.log(this.imie)
+
+function Auto(marka) {
+	this.marka = marka;
+	this.pojemnosc;
+	this.moc;
+	this.wyswietlDane = function () {
+		console.log("Marka: " + this.marka + "\n" + "Pojemnosc: " + this.pojemnosc + "\n" + "Moc: " + this.moc);
 	}
 }
-var Krystian = {
-	imie: "Krystian"
-	, wzrost: 180
-	, przedstawosobe: function () {
-		console.log(this.imie)
-	}
-}
-Krzysiek.przedstawosobe();
-Krystian.przedstawosobe();*/
-function Osoba(imie, nazwisko) {
-	this.imie = imie;
-	this.nazwisko = nazwisko;
-	this.wzrost;
-	this.oczy;
-	this.wyswietlInfo = function () {
-		console.log("Imie: " + this.imie + "\n" + "Nazwisko: " + this.nazwisko + "\n" + "Wzrost: " + this.wzrost + "\n" + "Oczy: " + this.oczy);
-	}
-}
-var krystian = new Osoba("Krystian", "Dziopa");
-krystian.wzrost = 180;
-krystian.oczy = "niebieskie";
-krystian.wyswietlInfo();
+var audi = new Auto("Audi");
+audi.pojemnosc = 2234;
+audi.moc = 300;
+audi.wyswietlDane();
+var volkswagen = new Auto("Volkswagen");
+volkswagen.pojemnosc = 1765;
+volkswagen.moc = 500;
+volkswagen.wyswietlDane();
+var peugeot = new Auto("Peugeot");
+peugeot.pojemnosc = 1543;
+peugeot.moc = 350;
+peugeot.wyswietlDane();
+var hyundai = new Auto("Hyundai");
+hyundai.pojemnosc = 2800;
+hyundai.moc = 200;
+hyundai.wyswietlDane();
